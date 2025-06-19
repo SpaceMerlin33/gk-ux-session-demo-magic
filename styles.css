@@ -10,7 +10,7 @@
     gap: 10px;
     margin-bottom: 20px;
 }
-
+test
 input {
     flex-grow: 1;
     padding: 8px;
@@ -19,7 +19,7 @@ input {
 
 button {
     padding: 8px 16px;
-    background: color #ff0000;;
+    background: color #222222;;
     color: white;
     border: none;
     cursor: pointer;
