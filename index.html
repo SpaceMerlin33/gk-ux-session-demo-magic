@@ -2,18 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Todo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Commit Composer Demo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Todo List</h1>
-        <div class="add-todo">
-            <input type="text" id="todoInput" placeholder="Add a new task">
-            <button onclick="addTodo()">Add</button>
+    <header class="main-header">
+        <div class="container">
+            <h1>AI Commit Composer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <ul id="todoList"></ul>
-    </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Generate Smart, Descriptive Commit Messages Instantly</h2>
+                <p class="hero-subtitle">Your ultimate tool for streamlined development workflows.</p>
+                <p>Leverage AI to craft perfect commit messages, saving time and improving collaboration.</p>
+                <button class="btn btn-primary" id="composeCommitBtn">Compose Commit</button>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="container">
+                <h3>Key Features</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>Intelligent Analysis</h4>
+                        <p>Our AI analyzes your code changes to understand the intent and scope.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Customizable Output</h4>
+                        <p>Tailor commit message style, length, and detail to your project's needs.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Multi-language Support</h4>
+                        <p>Works seamlessly across various programming languages and frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works-section">
+            <div class="container">
+                <h3>How It Works</h3>
+                <div class="steps">
+                    <div class="step-item">
+                        <span class="step-number">1</span>
+                        <p>Integrate with your VCS (Git, SVN, etc.).</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">2</span>
+                        <p>Stage your changes and initiate the composer.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">3</span>
+                        <p>Review and commit the AI-generated message.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h3>Get in Touch</h3>
+                <p>Have questions or want a demo? Contact us!</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-secondary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 AI Commit Composer. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
