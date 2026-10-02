@@ -1,1 +1,1 @@
-const taskSettings = { title: "Todo List", maxTasks: 10 };
+const taskSettings = { title: "Todo List", maxTasks: 25 };
