@@ -20,6 +20,7 @@ function deleteTodo(id) {
 }
 
 function renderTodos() {
+    document.getElementById("taskCount").textContent = `${todos.length} tasks`;
     const list = document.getElementById('todoList');
     list.innerHTML = todos
         .map(todo => `
