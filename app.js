@@ -8,10 +8,15 @@ function addTodo() {
     const text = input.value.trim();
     
     if (text && todos.length < taskSettings.maxTasks) {
-        todos.push({ text, id: Date.now() });
+        todos.push({ text, id: Date.now(), completed: false });
         input.value = '';
         renderTodos();
     }
+}
+
+function toggleTodo(id) {
+    todos = todos.map(todo => todo.id === id ? { ...todo, completed: !todo.completed } : todo);
+    renderTodos();
 }
 
 function deleteTodo(id) {
@@ -25,7 +30,8 @@ function renderTodos() {
     list.innerHTML = todos
         .map(todo => `
             <li>
-                <span>${todo.text}</span>
+                <span style="text-decoration: ${todo.completed ? 'line-through' : 'none'}">${todo.text}</span>
+                <button onclick="toggleTodo(${todo.id})" aria-pressed="${todo.completed}">${todo.completed ? 'Undo' : taskSettings.completedLabel}</button>
                 <button onclick="deleteTodo(${todo.id})">Delete</button>
             </li>
         `)
