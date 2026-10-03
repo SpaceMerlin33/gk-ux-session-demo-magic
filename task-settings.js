@@ -1,1 +1,1 @@
-const taskSettings = { title: "Focus Tasks", maxTasks: 25 };
+const taskSettings = { title: "Team Tasks", maxTasks: 25 };
