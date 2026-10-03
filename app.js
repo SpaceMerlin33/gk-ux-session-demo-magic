@@ -25,7 +25,8 @@ function deleteTodo(id) {
 }
 
 function renderTodos() {
-    document.getElementById("taskCount").textContent = `${todos.length} tasks`;
+    const remaining = todos.filter(todo => !todo.completed).length;
+    document.getElementById("taskCount").textContent = `${remaining} of ${todos.length} tasks remaining`;
     const list = document.getElementById('todoList');
     list.innerHTML = todos
         .map(todo => `
