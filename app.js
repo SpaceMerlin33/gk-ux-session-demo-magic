@@ -1,3 +1,6 @@
+document.querySelector("h1").textContent = taskSettings.title;
+document.title = taskSettings.title;
+
 let todos = [];
 
 function addTodo() {
