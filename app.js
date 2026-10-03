@@ -7,7 +7,7 @@ function addTodo() {
     const input = document.getElementById('todoInput');
     const text = input.value.trim();
     
-    if (text) {
+    if (text && todos.length < taskSettings.maxTasks) {
         todos.push({ text, id: Date.now() });
         input.value = '';
         renderTodos();
